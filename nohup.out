@@ -1,0 +1,171 @@
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [12/Jun/2022 04:09:38] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:09:38] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 04:09:46] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:09:46] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 04:09:48] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:09:48] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+
+ [INFO] Exiting Program and cleanup stuff
+[2022-06-12 04:09:56,972] ERROR in app: Exception on /2 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+127.0.0.1 - - [12/Jun/2022 04:09:56] "[35m[1mGET /2 HTTP/1.1[0m" 500 -
+who are you?
+who are you?
+
+ [INFO] Exiting Program and cleanup stuff
+[2022-06-12 04:10:07,306] ERROR in app: Exception on /2 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+127.0.0.1 - - [12/Jun/2022 04:10:07] "[35m[1mGET /2 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Jun/2022 04:10:53] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:10:54] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 04:11:50] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:11:50] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 04:11:53] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:11:53] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 04:12:11] "[33mGET /4 HTTP/1.1[0m" 404 -
+
+ [INFO] Exiting Program and cleanup stuff
+[2022-06-12 04:13:45,537] ERROR in app: Exception on /2 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+127.0.0.1 - - [12/Jun/2022 04:13:45] "[35m[1mGET /2 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Jun/2022 04:14:28] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:14:28] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 04:14:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 04:14:42] "[33mGET /1 HTTP/1.1[0m" 404 -
+
+ [INFO] Exiting Program and cleanup stuff
+[2022-06-12 04:14:51,147] ERROR in app: Exception on /2 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+127.0.0.1 - - [12/Jun/2022 04:14:51] "[35m[1mGET /2 HTTP/1.1[0m" 500 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "/home/pi/fdCam/app.py", line 121, in <module>
+    app.run()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 1052, in run_simple
+    inner()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 996, in inner
+    srv = make_server(
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 847, in make_server
+    return ThreadedWSGIServer(
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 740, in __init__
+    HTTPServer.__init__(self, server_address, handler)
+  File "/usr/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.9/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [12/Jun/2022 04:25:54] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:25:54] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 04:25:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+who are you?
+who are you?
+who are you?
+who are you?
+
+ [INFO] Exiting Program and cleanup stuff
+[2022-06-12 04:26:16,459] ERROR in app: Exception on /2 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+127.0.0.1 - - [12/Jun/2022 04:26:16] "[35m[1mGET /2 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Jun/2022 04:27:03] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:27:03] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+
+ [INFO] Exiting Program and cleanup stuff
+[2022-06-12 04:27:08,038] ERROR in app: Exception on /2 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+127.0.0.1 - - [12/Jun/2022 04:27:08] "[35m[1mGET /2 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Jun/2022 04:28:44] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:28:45] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 04:28:46] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 04:28:46] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [12/Jun/2022 05:56:20] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 05:56:20] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 05:56:25] "[32mGET /2 HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Jun/2022 05:56:25] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 05:56:25] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+Tcl_AsyncDelete: cannot find async handler
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [12/Jun/2022 05:56:43] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 05:56:44] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Jun/2022 05:56:46] "[32mGET /2 HTTP/1.1[0m" 302 -
+127.0.0.1 - - [12/Jun/2022 05:56:46] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Jun/2022 05:56:46] "[33mGET /%7B%7B%20url_for('static',%20filename='/style.css')%20%7D%7D HTTP/1.1[0m" 404 -
+Tcl_AsyncDelete: cannot find async handler

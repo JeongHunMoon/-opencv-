@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+		<style>
+			#subFrame {
+				position: absolute;
+				width: 1107px;
+				height: 720px;
+				left: 392px;
+				top: 180px;
+				background: rgba(59, 152, 237, 0.34);
+				border-radius: 100px;
+			}
+			#backBnt {
+				box-sizing: border-box;
+				position: absolute;
+				width: 134px;
+				height: 75px;
+				left: 884px;
+				top: 33px;
+				background: rgba(0, 0, 0, 0.25);
+				border: 1px solid rgba(218, 212, 212, 0.34);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 50px;
+			}
+							
+			#text1 {
+				position: absolute;
+				width: 881px;
+				height: 63px;
+				left: 113px;
+				top: 90px;
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 48px;
+				line-height: 58px;
+				text-align: center;
+				color: rgba(0, 0, 0, 0.51);
+
+			}
+			
+			#scrollBar {
+				box-sizing: border-box;
+				position: absolute;
+				width: 890px;
+				height: 258px;
+				left: 106px;
+				top: 226px;
+				background: #E5E5E5;
+				border: 1px solid rgba(218, 212, 212, 0.34);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 50px;
+			}
+			
+			ul {
+				margin:0;
+				padding:0;
+				list-style-type: none;
+			}
+
+
+			#scrollBar {
+				width:500px; height:228px; overflow-x:auto; white-space:nowrap; margin:0 auto;   
+				border-radius: 50px;
+				white-space: nowrap; 
+				left:303px;
+			}
+			
+			
+			 #scrollBar > ul { font-size:0px; text-overflow : scroll;}
+			 #scrollBar > ul > li {
+				border-radius:30px;
+				display:inline-block; 
+				font-size:20px; 
+				text-align: center;
+				width:183px; height:100px; 
+				overflow-x:auto; white-space:nowrap;
+				margin-right:30px;
+				padding-top:70px;
+				text-align:center;
+				background: #FFFFFF;
+				border: 1px solid rgba(218, 212, 212, 0.34);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			 }
+			
+							
+			#button1 {
+				text-align:center;
+				font-size:24px;
+				box-sizing: border-box;
+				position: absolute;
+				width: 298px;
+				height: 75px;
+				left: 342px;
+				top: 578px;
+				background: #E5E5E5;
+				border: 1px solid rgba(218, 212, 212, 0.34);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 50px;
+			}
+
+			#button2 {
+				font-size:24px;
+				box-sizing: border-box;
+				position: absolute;
+				width: 86px;
+				height: 75px;
+				left: 680px;
+				top: 578px;
+				background: #E5E5E5;
+				border: 1px solid rgba(218, 212, 212, 0.34);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 50px;
+			}
+			
+			#button1:hover, #button2:hover {
+				background: #B9B6B6;
+			}
+
+		</style>
+	</head>
+	<section id="subFrame">
+		<form action="/gohome" method="POST">
+			<input id ="backBnt" type="submit" value="Back">
+		</form>
+		<p id="text1">Select the number you want to delete!</p>
+		<div id="scrollBar">
+			<ul id="scrollBar_ul">
+			</ul>
+		</div>
+		<form action="/remove" method="POST">
+			<input id ="button1" type="text" name="id" placeholder="user id">
+			<input id ="button2" type="submit" value="submit">
+		</form>
+	</section>
+	
+	<script>
+		let inform = {{inform|tojson}}
+		console.log(inform);
+		for(let i = 0; i < inform.length; i++) {
+			let userInform = inform[i].split(" ");
+			console.log(userInform[0]);
+			console.log('typeof  userInfor[[1]',typeof userInform[1]);
+			console.log('what??', typeof {{ownerId|tojson}})
+			
+			const li = document.createElement('li');
+			if(userInform[0]+'\n' === {{ownerId|tojson}}) {
+				li.style.backgroundColor="#E75B5B"
+				li.insertAdjacentHTML('beforeend', `<b style="color:yellow;">!!!Owner!!!</b><br>User Id: ${userInform[0]}<br>User  name : ${userInform[1]}<br>`)
+			}
+			else {
+				li.insertAdjacentHTML('beforeend', `User Id: ${userInform[0]}<br>User  name : ${userInform[1]}<br>`)
+			}
+			
+			const ulTag = document.querySelector('#scrollBar_ul');
+			ulTag.appendChild(li);
+		}
+		
+	</script>
+</html>
+
