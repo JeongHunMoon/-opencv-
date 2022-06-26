@@ -14,7 +14,7 @@ Raspberry Pi의 카메라를 사용하여 사람의 얼굴을 비추면 얼굴�
 2022.06.10 ~ 2022.06.24
 
 
-## 🧾 프로젝트에 필요한 자료
+## 🧾 필요한 자료
 https://www.hackster.io/mjrobot/real-time-face-recognition-an-end-to-end-project-a10826#overview
 
 
