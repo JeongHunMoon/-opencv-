@@ -19,4 +19,4 @@ https://www.hackster.io/mjrobot/real-time-face-recognition-an-end-to-end-project
 
 
 ## ✔프로젝트 정리 
-https://jeonghoonmoon.tistory.com  
+https://jeonghoonmoon.tistory.com/117
